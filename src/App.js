@@ -11,6 +11,10 @@ const TableTest1= lazy(()=> import("./component/TableTest1/TableTest1"));
 const MobileDetails=lazy(()=>import("./component/MobileDetail/MobileDetails"));
 
 const MobileRegister=lazy(()=>import("./component/MobileRegister/MobileRegister"));
+
+ 
+const BasicForm=lazy(()=>import("./component/BasicForm/basicForm"));
+
 const Box=lazy(()=>import("./component/Box/Box"));
 function App() {
   return (
@@ -38,6 +42,11 @@ function App() {
             path="/box"
             name="Box"
             element={<Box/>}/>
+
+            <Route
+             path="/basicForm"
+            name="BasicForm"
+            element={<BasicForm/>}/>
 
 
 
