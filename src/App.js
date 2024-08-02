@@ -16,6 +16,9 @@ const MobileRegister=lazy(()=>import("./component/MobileRegister/MobileRegister"
 const BasicForm=lazy(()=>import("./component/BasicForm/basicForm"));
 
 const Box=lazy(()=>import("./component/Box/Box"));
+
+const ColorChangeCard=lazy(()=>import("./component/colorChangeCard/ColorChangeCard"));
+
 function App() {
   return (
     <div className="App">
@@ -47,6 +50,11 @@ function App() {
              path="/basicForm"
             name="BasicForm"
             element={<BasicForm/>}/>
+
+            <Route
+             path='/colorchangecard'
+            name="ColorChangeCard"
+            element={<ColorChangeCard/>}/>
 
 
 
